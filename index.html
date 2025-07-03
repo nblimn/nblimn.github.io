@@ -4,7 +4,7 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Nabil Iman | Portfolio</title>
-  <!-- Fira Code for a modern, techy look -->
+  <!-- Fira Code for a techy look -->
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -84,6 +84,37 @@
       display: inline-block;
     }
 
+    /* Certifications Section */
+    .certifications {
+      display: flex;
+      overflow-x: auto;
+      gap: 2rem;
+      padding: 1rem 0;
+    }
+
+    .cert-item {
+      flex: 0 0 auto;
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      min-width: 200px;
+    }
+
+    .cert-item img {
+      width: 50px;
+      height: auto;
+      margin-right: 1rem;
+    }
+
+    .cert-item span {
+      font-weight: 600;
+      color: var(--text-color);
+    }
+
+    /* Projects Section */
     .projects {
       display: flex;
       flex-wrap: wrap;
@@ -133,22 +164,39 @@
   <header>
     <div class="header-content">
       <img src="your-photo.png" alt="Your Photo" class="profile-photo">
-      <h1>Nabil Iman</h1>
-      <p>Cloud Enthusiast | Loves to talk</p>
+      <h1>Your Name</h1>
+      <p>Cloud Enthusiast</p>
     </div>
   </header>
 
   <main class="container">
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+      <h2>Certifications</h2>
+      <div class="certifications">
+        <div class="cert-item">
+          <img src="ccna-logo.png" alt="CCNA Logo">
+          <span>CCNA</span>
+        </div>
+        <div class="cert-item">
+          <img src="aws-saa-logo.png" alt="AWS SAA Logo">
+          <span>AWS Solutions Architect Associate</span>
+        </div>
+        <!-- Add more cert-item blocks as needed -->
+      </div>
+    </section>
+
+    <!-- Projects Section -->
     <section id="projects" class="section">
       <h2>Projects</h2>
       <div class="projects">
         <div class="project">
           <img src="project1.gif" alt="Project One">
-          <h3>Simple Static Website using AWS S3</h3>
+          <h3>Simple static TicTacToe website using AWS S3</h3>
           <p>A simple web-based Tic Tac Toe game deployed using Amazon S3 static website hosting. I built a lightweight HTML/CSS/JavaScript game and hosted it entirely on an S3 bucket, demonstrating how to deliver static content reliably using cloud storage. This project shows my practical understanding of static website deployment and basic AWS S3 configuration.</p>
         </div>
 <!--         <div class="project">
-          <img src="project2.jpg" alt="Project Two">
+          <img src="project2.gif" alt="Project Two">
           <h3>Project Two</h3>
           <p>A short description of another project. Highlight the key technologies and outcomes.</p>
         </div> -->
@@ -157,7 +205,7 @@
   </main>
 
   <footer>
-    &copy; 2025 Nabil Iman. All rights reserved.
+    &copy; 2025 Nabil Iman All rights reserved.
   </footer>
 </body>
 </html>
