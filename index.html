@@ -231,7 +231,7 @@
       <div class="certifications">
         <div class="cert-item">
           <img src="ccna-logo.png" alt="CCNA Logo">
-          <span>CCNA: Devnet Associate</span>
+          <span>CCNA: DevNet Associate</span>
         </div>
         <div class="cert-item">
           <img src="ccna-logo2.png" alt="CCNA Logo">
@@ -298,7 +298,301 @@
       <div class="social-icons">
         <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
         <a href="#"><img src="github-icon.png" alt="GitHub"></a>
+        <a href="#"><img src="instagram-icon.png" alt="Instagram"></a><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nabil Iman | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --background-color: #0D1117;
+      --primary-color: #58A6FF;
+      --text-color: #C9D1D9;
+      --card-bg: #161B22;
+      --border-color: #30363D;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Fira Code', monospace;
+      background-color: var(--background-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      position: relative;
+      color: #fff;
+      padding: 4rem 2rem;
+      text-align: center;
+      background-image: url('header-bg.gif');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .header-content {
+      background-color: rgba(0, 0, 0, 0.6);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+      border-radius: 8px;
+    }
+
+    .profile-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--primary-color);
+      margin-bottom: 1rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 2rem;
+    }
+
+    .section {
+      margin-bottom: 4rem;
+    }
+
+    .section h2 {
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+      border-bottom: 2px solid var(--primary-color);
+      display: inline-block;
+    }
+
+    /* Certifications Section */
+    .certifications {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      gap: 2rem;
+      padding: 1rem 0;
+    }
+
+    .certifications::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .certifications::-webkit-scrollbar-thumb {
+      background: var(--primary-color);
+      border-radius: 4px;
+    }
+
+    .certifications::-webkit-scrollbar-track {
+      background: var(--border-color);
+    }
+
+    .cert-item {
+      flex: 0 0 auto;
+      display: flex;
+      align-items: center;
+      min-width: 220px;
+    }
+
+    .cert-item img {
+      width: 120px;
+      height: 120px;
+      object-fit: contain;
+      margin-right: 1rem;
+    }
+
+    .cert-item span {
+      max-width: 120px;
+      word-wrap: break-word;
+    }
+
+    /* Projects Section */
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .project {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1rem;
+      flex: 1 1 calc(50% - 2rem);
+    }
+
+    .project img {
+      width: 100%;
+      border-radius: 4px;
+      margin-bottom: 0.75rem;
+    }
+
+    .project h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    /* Technologies Section - scrollable & small icons */
+    .technologies {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      gap: 1.5rem;
+      padding: 1rem 0;
+    }
+
+    .technologies::-webkit-scrollbar {
+      height: 6px;
+    }
+
+    .technologies::-webkit-scrollbar-thumb {
+      background: var(--primary-color);
+      border-radius: 4px;
+    }
+
+    .technologies::-webkit-scrollbar-track {
+      background: var(--border-color);
+    }
+
+    .tech-item {
+      flex: 0 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .tech-item img {
+      width: 32px;
+      height: 32px;
+      object-fit: contain;
+    }
+
+    /* Social Icons */
+    #socials h2 {
+      text-align: center;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+
+    .social-icons img {
+      width: 32px;
+      height: 32px;
+      object-fit: contain;
+    }
+
+    footer {
+      background: var(--card-bg);
+      text-align: center;
+      padding: 1rem 0;
+      border-top: 1px solid var(--border-color);
+    }
+
+    @media (max-width: 768px) {
+      .projects {
+        flex-direction: column;
+      }
+      .project {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <img src="your-photo.png" alt="Nabil Iman Photo" class="profile-photo">
+      <h1>Nabil Iman</h1>
+      <p>Cloud Enthusiast</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+      <h2>Certifications</h2>
+      <div class="certifications">
+        <div class="cert-item">
+          <img src="ccna-logo.png" alt="CCNA Logo">
+          <span>CCNA: DevNet Associate</span>
+        </div>
+        <div class="cert-item">
+          <img src="ccna-logo2.png" alt="CCNA Logo">
+          <span>CCNA: Switching, Routing, Wireless</span>
+        </div>
+        <div class="cert-item">
+          <img src="aws-saa-logo.png" alt="AWS SAA Logo">
+          <span>AWS: Solutions Architect Associate</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project">
+          <img src="project1.gif" alt="TicTacToe Project">
+          <h3>Simple static TicTacToe website using AWS S3</h3>
+          <p>A simple web-based Tic Tac Toe game deployed using Amazon S3 static website hosting.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technologies Section (Below Projects) -->
+    <section id="technologies" class="section">
+      <div class="technologies">
+        <div class="tech-item"><img src="aws-logo.png" alt="AWS"></div>
+        <div class="tech-item"><img src="javascript-logo.png" alt="JavaScript"></div>
+        <div class="tech-item"><img src="python-logo.png" alt="Python"></div>
+        <div class="tech-item"><img src="cpp-logo.png" alt="C++"></div>
+        <div class="tech-item"><img src="react-logo.png" alt="React"></div>
+        <div class="tech-item"><img src="mongoDB-logo.png" alt="MongoDB"></div>
+        <div class="tech-item"><img src="flask-logo.png" alt="Flask"></div>
+        <div class="tech-item"><img src="flutter-logo.png" alt="Flutter"></div>
+        <div class="tech-item"><img src="kubernetes-logo.png" alt="Kubernetes"></div>
+        <div class="tech-item"><img src="docker-logo.png" alt="Docker"></div>
+      </div>
+    </section>
+
+    <!-- Socials -->
+    <section id="socials" class="section">
+      <div class="social-icons">
+        <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+        <a href="#"><img src="github-icon.png" alt="GitHub"></a>
         <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+        <a href="#"><img src="email-icon.png" alt="Email"></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Nabil Iman. All rights reserved.
+  </footer>
+</body>
+</html>
+
         <a href="#"><img src="email-icon.png" alt="Email"></a>
       </div>
     </section>
