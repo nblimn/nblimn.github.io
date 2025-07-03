@@ -92,12 +92,21 @@
       padding: 1rem 0;
     }
 
+    .certifications::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .certifications::-webkit-scrollbar-thumb {
+      background: var(--primary-color);
+      border-radius: 4px;
+    }
+
+    .certifications::-webkit-scrollbar-track {
+      background: var(--border-color);
+    }
+
     .cert-item {
       flex: 0 0 auto;
-      background: var(--card-bg);
-      border: 1px solid var(--border-color);
-      border-radius: 8px;
-      padding: 1rem;
       display: flex;
       align-items: center;
       min-width: 200px;
@@ -110,6 +119,31 @@
     }
 
     .cert-item span {
+      font-weight: 600;
+      color: var(--text-color);
+    }
+
+    /* Technologies Section */
+    .technologies {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .tech-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .tech-item img {
+      width: 60px;
+      height: auto;
+      margin-bottom: 0.5rem;
+    }
+
+    .tech-item span {
       font-weight: 600;
       color: var(--text-color);
     }
@@ -142,6 +176,24 @@
       margin-bottom: 0.75rem;
     }
 
+    /* Social Icons Section */
+    .social-icons {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+
+    .social-icons img {
+      width: 32px;
+      height: 32px;
+      transition: transform 0.2s ease;
+    }
+
+    .social-icons a:hover img {
+      transform: scale(1.2);
+    }
+
     footer {
       background: var(--card-bg);
       color: var(--text-color);
@@ -163,8 +215,8 @@
 <body>
   <header>
     <div class="header-content">
-      <img src="your-photo.png" alt="Your Photo" class="profile-photo">
-      <h1>Your Name</h1>
+      <img src="your-photo.png" alt="Nabil Iman Photo" class="profile-photo">
+      <h1>Nabil Iman</h1>
       <p>Cloud Enthusiast</p>
     </div>
   </header>
@@ -182,7 +234,25 @@
           <img src="aws-saa-logo.png" alt="AWS SAA Logo">
           <span>AWS Solutions Architect Associate</span>
         </div>
-        <!-- Add more cert-item blocks as needed -->
+      </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section id="technologies" class="section">
+      <h2>Technologies</h2>
+      <div class="technologies">
+        <div class="tech-item">
+          <img src="aws-logo.png" alt="AWS Logo">
+          <span>AWS</span>
+        </div>
+        <div class="tech-item">
+          <img src="python-logo.png" alt="Python Logo">
+          <span>Python</span>
+        </div>
+        <div class="tech-item">
+          <img src="cpp-logo.png" alt="C++ Logo">
+          <span>C++</span>
+        </div>
       </div>
     </section>
 
@@ -191,21 +261,35 @@
       <h2>Projects</h2>
       <div class="projects">
         <div class="project">
-          <img src="project1.gif" alt="Project One">
+          <img src="project1.gif" alt="TicTacToe Project">
           <h3>Simple static TicTacToe website using AWS S3</h3>
           <p>A simple web-based Tic Tac Toe game deployed using Amazon S3 static website hosting. I built a lightweight HTML/CSS/JavaScript game and hosted it entirely on an S3 bucket, demonstrating how to deliver static content reliably using cloud storage. This project shows my practical understanding of static website deployment and basic AWS S3 configuration.</p>
         </div>
-<!--         <div class="project">
-          <img src="project2.gif" alt="Project Two">
-          <h3>Project Two</h3>
-          <p>A short description of another project. Highlight the key technologies and outcomes.</p>
-        </div> -->
+      </div>
+    </section>
+
+    <!-- Social Links -->
+    <section id="socials" class="section">
+      <h2>Connect with me</h2>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn">
+          <img src="linkedin-icon.png" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
+          <img src="github-icon.png" alt="GitHub">
+        </a>
+        <a href="https://www.instagram.com/yourusername" target="_blank" aria-label="Instagram">
+          <img src="instagram-icon.png" alt="Instagram">
+        </a>
+        <a href="mailto:youremail@example.com" aria-label="Email">
+          <img src="email-icon.png" alt="Email">
+        </a>
       </div>
     </section>
   </main>
 
   <footer>
-    &copy; 2025 Nabil Iman All rights reserved.
+    &copy; 2025 Nabil Iman. All rights reserved.
   </footer>
 </body>
 </html>
