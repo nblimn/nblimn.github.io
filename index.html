@@ -4,7 +4,6 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Nabil Iman | Portfolio</title>
-  <!-- Fira Code for a techy look -->
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -33,7 +32,7 @@
       color: #fff;
       padding: 4rem 2rem;
       text-align: center;
-      background-image: url('header-bg.gif'); /* Your blurred header image */
+      background-image: url('header-bg.gif');
       background-size: cover;
       background-position: center;
     }
@@ -47,7 +46,6 @@
       margin: 0 auto;
       padding: 2rem;
       border-radius: 8px;
-      animation: fadeIn 1.2s ease-out both;
     }
 
     .profile-photo {
@@ -76,15 +74,7 @@
 
     .section {
       margin-bottom: 4rem;
-      opacity: 0;
-      transform: translateY(30px);
-      animation: fadeUp 1s ease forwards;
     }
-
-    .section:nth-of-type(1) { animation-delay: 0.3s; }
-    .section:nth-of-type(2) { animation-delay: 0.5s; }
-    .section:nth-of-type(3) { animation-delay: 0.7s; }
-    .section:nth-of-type(4) { animation-delay: 0.9s; }
 
     .section h2 {
       color: var(--primary-color);
@@ -93,7 +83,6 @@
       display: inline-block;
     }
 
-    /* Technologies Section (Centered, Wrapped) */
     .technologies {
       display: flex;
       flex-wrap: wrap;
@@ -113,54 +102,53 @@
       height: 150px;
       object-fit: contain;
       margin-bottom: 0.5rem;
-      transition: transform 0.3s ease;
-    }
-
-    .tech-item:hover img {
-      transform: scale(1.05);
     }
 
     .tech-item span {
       font-weight: 600;
-      color: var(--text-color);
     }
 
-    /* Certifications Section (Centered, Wrapped) */
+    /* Certifications Section - SCROLLABLE! */
     .certifications {
       display: flex;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
+      overflow-x: auto;
       gap: 2rem;
-      justify-content: center;
       padding: 1rem 0;
+    }
+
+    .certifications::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .certifications::-webkit-scrollbar-thumb {
+      background: var(--primary-color);
+      border-radius: 4px;
+    }
+
+    .certifications::-webkit-scrollbar-track {
+      background: var(--border-color);
     }
 
     .cert-item {
       flex: 0 0 auto;
       display: flex;
       align-items: center;
-      min-width: 200px;
+      min-width: 220px;
     }
 
     .cert-item img {
-      width: 150px;
-      height: 150px;
+      width: 120px;
+      height: 120px;
       object-fit: contain;
       margin-right: 1rem;
-      transition: transform 0.3s ease;
-    }
-
-    .cert-item:hover img {
-      transform: scale(1.05);
     }
 
     .cert-item span {
-      font-weight: 600;
-      color: var(--text-color);
-      max-width: 150px;
+      max-width: 120px;
       word-wrap: break-word;
     }
 
-    /* Projects Section */
     .projects {
       display: flex;
       flex-wrap: wrap;
@@ -173,18 +161,10 @@
       border-radius: 8px;
       padding: 1rem;
       flex: 1 1 calc(50% - 2rem);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .project:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
 
     .project img {
       width: 100%;
-      height: auto;
-      object-fit: cover;
       border-radius: 4px;
       margin-bottom: 0.75rem;
     }
@@ -193,7 +173,6 @@
       margin-bottom: 0.5rem;
     }
 
-    /* Social Icons Section */
     #socials h2 {
       text-align: center;
     }
@@ -209,16 +188,10 @@
       width: 32px;
       height: 32px;
       object-fit: contain;
-      transition: transform 0.2s ease;
-    }
-
-    .social-icons a:hover img {
-      transform: scale(1.2);
     }
 
     footer {
       background: var(--card-bg);
-      color: var(--text-color);
       text-align: center;
       padding: 1rem 0;
       border-top: 1px solid var(--border-color);
@@ -237,23 +210,6 @@
         height: 100px;
       }
     }
-
-    /* Animations */
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    @keyframes fadeUp {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
   </style>
 </head>
 <body>
@@ -266,7 +222,6 @@
   </header>
 
   <main class="container">
-    <!-- Technologies Section -->
     <section id="technologies" class="section">
       <div class="technologies">
         <div class="tech-item">
@@ -284,7 +239,6 @@
       </div>
     </section>
 
-    <!-- Certifications Section -->
     <section id="certifications" class="section">
       <h2>Certifications</h2>
       <div class="certifications">
@@ -294,43 +248,33 @@
         </div>
         <div class="cert-item">
           <img src="ccna-logo2.png" alt="CCNA Logo">
-          <span>CCNA: Switching, Routing, and Wireless Essentials</span>
+          <span>CCNA: Switching, Routing, Wireless</span>
         </div>
         <div class="cert-item">
           <img src="aws-saa-logo.png" alt="AWS SAA Logo">
-          <span>AWS: Solutions Architect Associate (SAA-C03)</span>
+          <span>AWS: Solutions Architect Associate</span>
         </div>
       </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects" class="section">
       <h2>Projects</h2>
       <div class="projects">
         <div class="project">
           <img src="project1.gif" alt="TicTacToe Project">
           <h3>Simple static TicTacToe website using AWS S3</h3>
-          <p>A simple web-based Tic Tac Toe game deployed using Amazon S3 static website hosting. I built a lightweight HTML/CSS/JavaScript game and hosted it entirely on an S3 bucket, demonstrating how to deliver static content reliably using cloud storage. This project shows my practical understanding of static website deployment and basic AWS S3 configuration.</p>
+          <p>A simple web-based Tic Tac Toe game deployed using Amazon S3 static website hosting.</p>
         </div>
       </div>
     </section>
 
-    <!-- Social Links -->
     <section id="socials" class="section">
       <h2>Connect with me</h2>
       <div class="social-icons">
-        <a href="https://www.linkedin.com/in/nabil-iman-049719213/" target="_blank" aria-label="LinkedIn">
-          <img src="linkedin-icon.png" alt="LinkedIn">
-        </a>
-        <a href="https://github.com/nblimn" target="_blank" aria-label="GitHub">
-          <img src="github-icon.png" alt="GitHub">
-        </a>
-        <a href="https://www.instagram.com/_nblimn/" target="_blank" aria-label="Instagram">
-          <img src="instagram-icon.png" alt="Instagram">
-        </a>
-        <a href="mailto:muhammadnabiliman@graduate.utm.my" aria-label="Email">
-          <img src="email-icon.png" alt="Email">
-        </a>
+        <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+        <a href="#"><img src="github-icon.png" alt="GitHub"></a>
+        <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+        <a href="#"><img src="email-icon.png" alt="Email"></a>
       </div>
     </section>
   </main>
