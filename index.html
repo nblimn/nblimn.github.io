@@ -33,7 +33,7 @@
       color: #fff;
       padding: 4rem 2rem;
       text-align: center;
-      background-image: url('header-bg.jpg'); /* Your blurred header image */
+      background-image: url('header-bg.gif'); /* Your blurred header image */
       background-size: cover;
       background-position: center;
     }
@@ -84,6 +84,32 @@
       display: inline-block;
     }
 
+    /* Technologies Section (no title) */
+    .technologies {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .tech-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .tech-item img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      margin-bottom: 0.5rem;
+    }
+
+    .tech-item span {
+      font-weight: 600;
+      color: var(--text-color);
+    }
+
     /* Certifications Section */
     .certifications {
       display: flex;
@@ -114,36 +140,12 @@
 
     .cert-item img {
       width: 50px;
-      height: auto;
+      height: 50px;
+      object-fit: contain;
       margin-right: 1rem;
     }
 
     .cert-item span {
-      font-weight: 600;
-      color: var(--text-color);
-    }
-
-    /* Technologies Section */
-    .technologies {
-      display: flex;
-      gap: 2rem;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    .tech-item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .tech-item img {
-      width: 60px;
-      height: auto;
-      margin-bottom: 0.5rem;
-    }
-
-    .tech-item span {
       font-weight: 600;
       color: var(--text-color);
     }
@@ -172,6 +174,7 @@
     .project img {
       width: 100%;
       height: auto;
+      object-fit: cover;
       border-radius: 4px;
       margin-bottom: 0.75rem;
     }
@@ -191,6 +194,7 @@
     .social-icons img {
       width: 32px;
       height: 32px;
+      object-fit: contain;
       transition: transform 0.2s ease;
     }
 
@@ -246,7 +250,7 @@
 
     <!-- Certifications Section -->
     <section id="certifications" class="section">
-      <h2>Certifications/Badges</h2>
+      <h2>Certifications</h2>
       <div class="certifications">
         <div class="cert-item">
           <img src="ccna-logo.png" alt="CCNA Logo">
