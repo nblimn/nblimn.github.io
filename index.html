@@ -95,12 +95,10 @@
     .certifications::-webkit-scrollbar {
       height: 8px;
     }
-
     .certifications::-webkit-scrollbar-thumb {
       background: var(--primary-color);
       border-radius: 4px;
     }
-
     .certifications::-webkit-scrollbar-track {
       background: var(--border-color);
     }
@@ -149,24 +147,29 @@
       margin-bottom: 0.5rem;
     }
 
-    /* Technologies Section - scrollable & small icons */
+    /* Technologies Section - scrollable & centered */
     .technologies {
       display: flex;
       flex-wrap: nowrap;
       overflow-x: auto;
       gap: 1.5rem;
       padding: 1rem 0;
+      justify-content: center;
+    }
+
+    .technologies::before,
+    .technologies::after {
+      content: '';
+      flex: 0 0 1rem; /* Padding on edges */
     }
 
     .technologies::-webkit-scrollbar {
       height: 6px;
     }
-
     .technologies::-webkit-scrollbar-thumb {
       background: var(--primary-color);
       border-radius: 4px;
     }
-
     .technologies::-webkit-scrollbar-track {
       background: var(--border-color);
     }
@@ -174,7 +177,6 @@
     .tech-item {
       flex: 0 0 auto;
       display: flex;
-      flex-direction: column;
       align-items: center;
     }
 
@@ -255,12 +257,12 @@
         <div class="project">
           <img src="project1.gif" alt="TicTacToe Project">
           <h3>Simple static TicTacToe website using AWS S3</h3>
-          <p>A simple web-based Tic Tac Toe game deployed using Amazon S3 static website hosting.</p>
+          <p>A simple web-based Tic Tac Toe game deployed using Amazon S3 static website hosting. I built a lightweight HTML/CSS/JavaScript game and hosted it entirely on an S3 bucket, demonstrating how to deliver static content reliably using cloud storage. This project shows my practical understanding of static website deployment and basic AWS S3 configuration.</p>
         </div>
       </div>
     </section>
 
-    <!-- Technologies Section (Below Projects) -->
+    <!-- Technologies Section below Projects -->
     <section id="technologies" class="section">
       <div class="technologies">
         <div class="tech-item"><img src="aws-logo.png" alt="AWS"></div>
